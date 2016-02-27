@@ -631,8 +631,76 @@ body{
     color: #cccccc;
     font-size: 10px;
 }
-
-
+.eyeSub, .penSub, .deleteSub{
+    width: 19px;
+    height: 16px;
+    display: inline-block;
+}
+.eyeSub{
+    height: 12px;
+    background-image: url(../img/subEyeOn.png);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.eyeSub:hover{
+    background-image: url(../img/subEyeOnW.png)
+}
+.penSub{
+    background-image: url(../img/subPen.png)
+}
+.penSub:hover{
+    background-image: url(../img/subPenW.png)
+}
+.deleteSub{
+    background-image: url(../img/subDelete.png)
+}.deleteSub:hover{
+     background-image: url(../img/subDeleteW.png)
+ }
+.eyeOff, .eyeOn, .delete, .add{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.eyeOff{
+    background-image: url(../img/eyeOff.png)
+}
+.eyeOff:hover{
+    background-image: url(../img/eyeOffW.png)
+}
+.eyeOn{
+    background-image: url(../img/eyeOn.png)
+}
+.eyeOn:hover{
+    background-image: url(../img/eyeOnW.png)
+}
+.delete{
+    background-image: url(../img/delete.png)
+}
+.delete:hover{
+    background-image: url(../img/deleteW.png)
+}
+.add{
+    background-image: url(../img/add.png)
+}
+.add:hover{
+    background-image: url(../img/addW.png)
+}
+.cSCContainer{
+    float: right;
+    margin-right: 10px;
+}
+.cSContentUl .cSCUlContainer{
+    border-bottom: 2px solid #cccccc;
+    padding: 10px 20px;
+}
 
 
 
