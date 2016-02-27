@@ -1,0 +1,9 @@
+var hder = document.getElementsByClassName("headerContainer");
+var screenWidth = document.documentElement.scrollWidth
+    || document.body.scrollWidth;
+function findDimensions(){
+    if (screenWidth <= 1279) {
+        hder[0].style.height = screenWidth * 0.1446442533229085;
+    }
+}
+window.onresize=findDimensions();

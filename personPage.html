@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XX的个人主页</title>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link href="css/normalize.min.css" rel="stylesheet" type="text/css">
+    <link href="css/personPage.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="editor editorIntro">
+        <div class="editorContainer">
+            <div class="eIHeader eHeader">
+                <h3>编辑</h3>
+            </div>
+            <div class="eIFormContainer eFormContainer">
+                <form method="get" action="#" class="eIForm clearFix">
+                    <div class="inputContainerL">
+                        <h3 class="pEIntroH">简介</h3>
+                        <label for="personsEIntro"></label>
+                        <textarea name="personsEWords" id="personsEIntro"></textarea>
+                        <span class="personsEIcon"><img src="img/personsIcon.jpg"></span>
+                    </div>
+                    <h3 class="pEEssential">基本信息</h3>
+                    <div class="inputContainerS clearFix">
+                        <div class="inputContainer">
+                            <label for="personsEName" class="pELabel">姓名</label>
+                            <input type="text" name="personsEName" id="personsEName">
+                        </div>
+                        <div class="inputContainer">
+                            <span id="personsSex">性别</span>
+                            <label class="pERadio"><input type="radio" name="personsSex" >男</label>
+                            <label class="pERadio"><input type="radio" name="personsSex">女</label>
+                        </div>
+                        <div class="inputContainer">
+                            <label for="personsECountry" class="pELabel">国籍</label>
+                            <input type="text" id="personsECountry">
+                        </div>
+                        <div class="inputContainer">
+                            <label for="personsENation" class="pELabel">民族</label>
+                            <input type="text" id="personsENation">
+                        </div>
+                        <div class="inputContainer">
+                            <label for="personsEBirthPlace" class="pELabel">出生地</label>
+                            <input type="text" id="personsEBirthPlace">
+                        </div>
+                        <div class="inputContainer">
+                            <label for="personsEBirthDay" class="pELabel">出生日期</label>
+                            <input type="text" id="personsEBirthDay">
+                        </div>
+                        <div class="inputContainer">
+                            <label for="personsEGraduateSchool" class="pELabel">毕业院校</label>
+                            <input type="text" id="personsEGraduateSchool">
+                        </div>
+                        <div class="inputContainer">
+                            <label for="personsEPolitics" class="pELabel">政治面貌</label>
+                            <input type="text" id="personsEPolitics">
+                        </div>
+                    </div>
+                    <div class="inputContainerF">
+                        <h3 class="pEWorks">在研项目</h3>
+                        <label><textarea></textarea></label>
+                    </div>
+                    <div class="inputContainerF">
+                        <h3 class="pEAchievement">主要成就</h3>
+                        <label><textarea></textarea></label>
+                    </div>
+                    <button type="submit">完成</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="editor editorContent eDisplayed">
+        <div class="editorContainer">
+            <div class="eCHeader eHeader">
+                <h3>编辑</h3>
+            </div>
+            <div class="eCFormContainer eFormContainer">
+                <form method="get" action="#" class="eCForm clearFix">
+                    <div class="inputContainerL">
+                        <label for="eCTitle" class="pELabel">标题</label>
+                        <input type="text" id="eCTitle">
+                    </div>
+                    <div class="inputContainerL">
+                        <label for="eCBrief" class="pELabel" id="eCBL">简述</label>
+                        <textarea id="eCBrief"></textarea>
+                    </div>
+                    <div class="eCFooter clearFix">
+                        <div class="eCFL">
+                            <img src="img/iconImg.png"><span>添加图片</span>
+                            <img src="img/iconLink.png"><span>添加附件</span>
+                        </div>
+                        <div class="eCFR">
+                            <span>现在时间:</span>
+                            <span class="timeNow"></span>
+                        </div>
+                    </div>
+                    <button type="submit">完成</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <header class="headerContainer">
+        <div class="header">
+            <div class="headerTop">
+                <div class="hBtnContainer clearFix">
+                    <div class="hBtnContainerL">
+                        <span class="button hBtnL"><a href="#">修改网页后缀名</a></span>
+                    </div>
+                    <div class="hBtnContainerR">
+                        <span class="button hBtnR1 active"><a href="#">首页</a></span>
+                        <span class="button hBtnR2"><a href="#">登出</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="personsContainer">
+                <div class="pCContainer">
+                    <div class="personsIcon"><img src="img/personsIcon.jpg"></div>
+                    <div class="pIconNote"><span class="personName">李四</span></div>
+                    <span class="quotationLeft"><img src="img/leftComma.png"></span>
+                    <span class="personsWords">一个有理想的人，应该从自己的探索欲出发，充分挖掘和发挥自己的最大潜力</span>
+                    <span class="quotationRight"><img src="img/rightComma.png"></span>
+                </div>
+            </div>
+            <div class="headerBottom"></div>
+        </div>
+    </header>
+    <div class="introductionContainer">
+        <div class="introduction">
+            <div class="introHeader">
+                <h2 class="contentTitle">个人简介</h2>
+                <span class="button buttonRight" onclick="editorIOn()"><a href="#">编辑</a></span>
+            </div>
+            <div class="introContent clearFix">
+                <div class="introCol introCol1">
+                    <span class="introTitle">基本信息</span>
+                    <table border="0">
+                        <tr>
+                            <td>中文名</td>
+                            <td>刘经南</td>
+                        </tr>
+                        <tr>
+                            <td>国籍</td>
+                            <td>中国</td>
+                        </tr>
+                        <tr>
+                            <td>民族</td>
+                            <td>汉族</td>
+                        </tr>
+                        <tr>
+                            <td>出生地</td>
+                            <td>湖南省长沙市</td>
+                        </tr>
+                        <tr>
+                            <td>出生日期</td>
+                            <td>1943年7月1日</td>
+                        </tr>
+                        <tr>
+                            <td>毕业院校</td>
+                            <td>武汉测绘学院</td>
+                        </tr>
+                        <tr>
+                            <td>信仰</td>
+                            <td>中国共产党</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="introCol introCol2">
+                    <span class="introTitle">主讲课程</span>
+                    <ol>
+                        <li>全球卫星定位导航系统及其应用</li>
+                    </ol>
+                    <span class="introTitle">在研项目</span>
+                    <ol>
+                        <li>卫星导航系统的精密定位定轨软件研究，自然基金项目</li>
+                        <li>卫星导航增强系统广域差分GPS接收机，市科委项目</li>
+                        <li>深圳市连续运行卫星定位服务系统，横向项目</li>
+                        <li>GPS实时高精度土石方碾压施工质量监测系统，横向项目</li>
+                        <li>CH-01工程，军工项目</li>
+                    </ol>
+                </div>
+                <div class="introCol introCol3">
+                    <span class="introTitle">主要成就</span>
+                    <ul>
+                        <li>1986年获石油部科学技术进步一等奖</li>
+                        <li>1988年获国家科技进步三等奖</li>
+                        <li>1992年获国家测绘科技进步二等奖</li>
+                        <li>1993年被评为有突出贡献中青年专家</li>
+                        <li>1997年获国家教委教学优秀成果一等奖</li>
+                        <li>1998年获国家测绘科技进步一等奖</li>
+                        <li>2000年获国家科技进步二等奖</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fileContainer">
+        <div class="file">
+            <div class="fileHeader">
+                <h2 class="contentTitle">资料论文</h2>
+                <span class="button buttonRight"><a href="#">上传</a></span>
+            </div>
+            <div class="fileContent clearFix">
+                <div class="fTimeContainer">
+                    <span class="fTime">2016.2.17</span>
+                </div>
+                <div class="fileExactContainer">
+                    <h2 class="fETitle">是京东客服哈交电话费</h2>
+                    <div class="fileExact">
+                        <span class="fEIcon"><img src="img/iconLink.png"></span>
+                        <span class="fEName">面积等次啊神盾局爱.pdf</span>
+                    </div>
+                    <div class="fEIntro">
+                        <div><p>爱上吃那点及卡号的空间啊实打实的离开谁都爱问问哦吃饭时离开电风扇摩擦力卡萨就发哦二怕忘记了放假快乐多侧面看减肥了卡萨及法律是否我饿爱上吃那点及卡号的空间啊实打实的离开谁都爱问问哦吃饭时离开电风扇摩擦力卡萨就发哦二怕忘记了放假快乐多侧面看减肥了卡萨及法律是否我饿爱上吃那点及卡号的空间啊实打实的离开谁都爱问问哦吃饭时离开电风扇摩擦力卡萨就发哦二怕忘记了放假快乐多侧面看减肥了卡萨及法律是否我饿……</p></div>
+                        <div class="fileComment"></div>
+                    </div>
+                </div>
+                <div class="fileControlContainer">
+                    <div class="fileControl">
+                        <div class="iconPen"></div>
+                        <div class="division"></div>
+                        <div class="iconTrash"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="fileContent clearFix">
+                <div class="fTimeContainer">
+                    <span class="fTime">2016.2.17</span>
+                </div>
+                <div class="fileExactContainer">
+                    <h2 class="fETitle">是京东客服哈交电话费</h2>
+                    <div class="fileExact">
+                        <span class="fEIcon"><img src="img/iconLink.png"></span>
+                        <span class="fEName">面积等次啊神盾局爱.pdf</span>
+                    </div>
+                    <div class="fEIntro">
+                        <div><p>爱上吃那点及卡号的空间啊实打实的离开谁都爱问问哦吃饭时离开电风扇摩擦力卡萨就发哦二怕忘记了放假快乐多侧面看减肥了卡萨及法律是否我饿爱上吃那点及卡号的空间啊实打实的离开谁都爱问问哦吃饭时离开电风扇摩擦力卡萨就发哦二怕忘记了放假快乐多侧面看减肥了卡萨及法律是否我饿爱上吃那点及卡号的空间啊实打实的离开谁都爱问问哦吃饭时离开电风扇摩擦力卡萨就发哦二怕忘记了放假快乐多侧面看减肥了卡萨及法律是否我饿……</p></div>
+                        <div class="fileComment clearFix">
+                            <div class="fileSeen"><img src="img/iconEye.png"><span id="fSAmount">999</span></div>
+                            <div class="fileDownload"><img src="img/iconDownload.png"><span id="fDAmount">999</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fileControlContainer">
+                    <div class="fileControl">
+                        <div class="iconPen"></div>
+                        <div class="division"></div>
+                        <div class="iconTrash"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="fileContent clearFix">
+                <div class="fTimeContainer">
+                    <span class="fTime">2016.2.17</span>
+                </div>
+                <div class="fileExactContainer">
+                    <h2 class="fETitle">是京东客服哈交电话费</h2>
+                    <div class="fileExact">
+                        <span class="fEIcon"><img src="img/iconLink.png"></span>
+                        <span class="fEName">面积等次啊神盾局爱.pdf</span>
+                    </div>
+                    <div class="fEIntro">
+                        <div><p>爱上吃那点及卡号的空间啊实打实的离开谁都爱问问哦吃饭时离开电风扇摩擦力卡萨就发哦二怕忘记了放假快乐多侧面看减肥了卡萨及法律是否我饿爱上吃那点及卡号的空间啊实打实的离开谁都爱问问哦吃饭时离开电风扇摩擦力卡萨就发哦二怕忘记了放假快乐多侧面看减肥了卡萨及法律是否我饿爱上吃那点及卡号的空间啊实打实的离开谁都爱问问哦吃饭时离开电风扇摩擦力卡萨就发哦二怕忘记了放假快乐多侧面看减肥了卡萨及法律是否我饿……</p></div>
+                        <div class="fileComment"></div>
+                    </div>
+                </div>
+                <div class="fileControlContainer">
+                    <div class="fileControl">
+                        <div class="iconPen"></div>
+                        <div class="division"></div>
+                        <div class="iconTrash"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="fileMore">
+                <span class="button"><a href="#">加载更多</a></span>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footerContainer">
+            <span class="copyRight">Copyright 2016 State Key Lab of Software Eengineering, All Rights Reserved</span>
+        </div>
+    </footer>
+    <script src="js/sub.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实验室概况</title>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link href="css/normalize.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header class="header">
+        <div class="headerContainer">
+            <div class="headerIcon">
+                <img src="img/icon.jpg">
+            </div>
+            <div class="headerFont">
+                <h1>软件工程国家重点实验室</h1>
+                <h3>STATE KEY LAB OF SOFTWARE ENGINEERING</h3>
+            </div>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="loginContainer">
+            <div class="loginFont">
+                <p class="loginHello">你好，游客</p>
+                <p class="loginButtons">
+                    <span class="button" id="language"><a href="#">English</a></span>
+                    <span class="button" id="login" onclick="loginDisplay()"><a href="#">登录</a></span>
+                </p>
+            </div>
+            <div class="loginForm">
+                <form method="post" action="#">
+                    <label for="loginUser" class="labelInput" id="labelUser">用户名</label>
+                    <input type="text"  name="user" id="loginUser">
+                    <label for="loginPasswd" class="labelInput" id="labelPasswd">密码</label>
+                    <input type="password" id="loginPasswd">
+                    <input type="submit" value="登录">
+                </form>
+            </div>
+        </div>
+        <div class="navContainer clearFix">
+            <ul class="navOptions clearFix">
+                <li class="options"><a href="#" class="optionsA">实验室概况</a></li>
+                <li class="options"><a href="#" class="optionsA">研究队伍</a></li>
+                <li class="options"><a href="#" class="optionsA">科学研究</a></li>
+                <li class="options mainOptions">
+                    <a href="#" id="cooA" class="optionsA">合作交流</a>
+                    <ul class="subOptions">
+                        <li><a href="#">英国</a></li>
+                        <li><a href="#">美国</a></li>
+                    </ul>
+                </li>
+                <li class="options active opHome"><a href="#"><img src="img/homeIcon.png" class="homeIcon"></a></li>
+                <li class="options"><a href="#" class="optionsA">人才培养</a></li>
+                <li class="options"><a href="#" class="optionsA">研究课题</a></li>
+                <li class="options"><a href="#" class="optionsA">工作动态</a></li>
+                <li class="options"><a href="#" class="optionsA">下载中心</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="bannerContainer">
+        <div class="banner">
+            <div class="bannerBk"></div>
+        </div>
+    </div>
+    <div class="contentSubContainer">
+        <div class="contentSub clearFix">
+            <div class="cSNavContainer">
+                <div class="cSNav">
+                    <ul class="cSNUl">
+                        <li class="cSNLi1 active"><a href="#">新闻动态</a></li>
+                        <li class="cSNLi2"><a href="#">通知公告</a></li>
+                        <li class="cSNLi3"><a href="#">人才招聘</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cSContentContainer">
+                <div class="cSHeader">
+                    <div class="cSLinks">
+                        <span class="cSLinks1"><a href="#">首页</a></span>
+                        <span class="cSLDivide"></span>
+                        <span class="cSLinks2"><a href="#">工作动态</a></span>
+                        <span class="cSLDivide"></span>
+                        <span class="cSLinks3"><a href="#">新闻动态</a></span>
+                    </div>
+                    <div class="cSTitle">
+                        <h1>2015年亚太需求工程研讨会在武汉大学成功召开</h1>
+                        <p class="cSHCTime">2015-10-23 12:11:51</p>
+                    </div>
+                </div>
+                <div class="cSContent">
+                    <div>
+                        <p>
+                            为了扩大软件工程国家重点实验室的国际学术影响力，促进与软件工程界国际一流专家的学术交流，软件工程国家重点实验室承办的第二届亚太需求工程研讨会(The Second Asia Pacific Requirements Engineering Symposium, APRES  2015)于 2015年10月18-20日 在武汉大学珞珈山庄胜利召开。</p>
+                        <br>
+                        <p>    本次专题研讨会的主题是“面向大数据应用的需求工程”。来自加拿大、澳大利亚、德国、韩国、日本等世界各地及亚太地区高校、工业界同行欢聚于武汉大学，展示了最新研究成果。会议上多名国际国内学术界和产业界有影响力的教授专家做了特邀报告和专题报告，介绍和交流了国际前沿学术动态及业界最新研发动态。</p>
+                        <br>
+                        <p>    软件工程国家重点实验室主任徐宝文教授到会致辞，常务副主任应时及副主任吴志健出席了会议，副主任彭蓉主持了会议。会议取得了圆满成功。
+                        </p>
+                    </div>
+                </div>
+                <div class="cSFooter">
+                    <div class="cSFContainer">
+                        <span class="cSContentFrom">来源</span>
+                        <span class="cSCFNum">XXX</span>
+                        <span class="cSContentSeen">浏览量</span>
+                        <span class="cSCSNum">XXX</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footerContainer">
+            <span class="copyRight">Copyright 2016 State Key Lab of Software Eengineering, All Rights Reserved</span>
+        </div>
+    </footer>
+</body>
+</html>

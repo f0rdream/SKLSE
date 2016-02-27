@@ -1,0 +1,388 @@
+/*global starts*/
+.button a{
+    font-size: 16px;
+    background-color: #00b7ee;
+    padding: 5px 20px;
+    border-radius: 15px;
+    color: #ffffff;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.button a:hover{
+    background-color: #ffffff;
+    color: #00b7ee;
+}
+.buttonRight{
+    float: right;
+    margin-right: 40px;
+}
+.contentTitle{
+    font-size: 36px;
+    color: #00b7ee;
+    display: inline-block;
+}
+/*to clearfix*/
+.clearFix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+body{
+    position: relative;
+}
+/*global ends*/
+/*header starts*/
+.hBtnContainer{
+    padding-top: 20px;
+    margin: 0 20px;
+}
+.headerTop{
+    height: 155px;
+    background-image: url(../img/pHdBgTop.jpg);
+    background-position: center;
+}
+.headerTop .button a{
+    background-color: #ffffff;
+    color: #00b7ee;
+}
+.headerTop .active a{
+    background-color: #00b7ee;
+    color: #ffffff;
+}
+.headerTop .button a:hover{
+    background-color: #00b7ee;
+    color: #ffffff;
+}
+.headerTop .active a:hover{
+    background-color: #ffffff;
+    color: #00b7ee;
+}
+.hBtnContainerL{
+    float: left;
+}
+.hBtnContainerR{
+    float: right;
+}
+.headerBottom{
+    background-image: url(../img/pHdBgBottom.jpg);
+    background-position: center;
+    height: 251px;
+}
+.headerContainer{
+    position: relative;
+}
+.personsContainer{
+    width: 100%;
+    position: absolute;
+    top: 105px;
+    text-align: center;
+}
+.pCContainer{
+    display: inline-block;
+}
+.pCContainer .personsWords{
+    display: inline-block;
+    width: 400px;
+    word-break: normal;
+}
+.personsIcon img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+.pIconNote{
+    margin: 10px auto 20px auto;
+}
+.pIconNote span{
+    font-size: 24px;
+}
+/*header ends*/
+
+/*introduction starts*/
+.introduction{
+    max-width: 1000px;
+    margin: 0 auto;
+    border-bottom: 4px #8B8878 solid;
+}
+.introContent{
+    padding-bottom: 20px;
+}
+.introHeader .button{
+    margin-top: 40px;
+}
+.introContent td{
+    padding-right: 20px;
+}
+
+.introTitle{
+    font-weight: bold;
+}
+.introCol{
+    float: left;
+    font-size: 13px;
+}
+.introCol1{
+    width: 18%;
+    padding-right: 2%;
+}
+.introCol2{
+    padding: 0 5%;
+    width: 35%;
+    border-left: 2px #999999 solid;
+    border-right: 2px #999999 solid;
+}
+.introCol3{
+    padding-left: 5%;
+    width: 25%;
+}
+/*introduction ends*/
+/*file starts*/
+.file{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.fileContainer{
+
+}
+.fileContent{
+    margin-bottom: 30px;
+}
+.fileHeader .button{
+    margin-top: 40px;
+}
+.fTimeContainer{
+    margin-top: 10%;
+}
+.fTimeContainer .fTime{
+    font-size: 16px;
+    color: #999999;
+}
+.fTimeContainer{
+    float: left;
+    width: 20%;
+}
+.fileExactContainer{
+    float: left;
+    width: 60%;
+}
+.fileExactContainer .fETitle{
+    font-size: 30px;
+}
+.fileExactContainer .fEName{
+    padding-left: 15px;
+    font-size: 15px;
+    color: #00b7ee;
+}
+.fileExactContainer .fEIcon img{
+    margin-top: 5px;
+}
+.fileExactContainer .fEIntro p{
+    line-height: 1.5;
+}
+.fileControlContainer{
+    float: left;
+    width: 20%;
+    margin-top: 12%;
+}
+.fileMore{
+    width: 308px;
+    height: 111px;
+    background-image: url(../img/bk.jpg);
+    margin: 0 auto;
+    text-align: center;
+
+}
+.fileControl .division{
+    margin-left: 17%;
+    width: 60px;
+    height: 2px;
+    border-top: 2px solid #8B8878;
+}
+.fileControl .iconPen{
+    display: block;
+    margin: 5% 20%;
+    height: 48px;
+    width: 48px;
+    background-image: url(../img/iconPen.png);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.fileControl .iconPen:hover{
+    background-image: url(../img/iconTrashW.png);
+}
+.fileControl .iconTrash{
+    display: block;
+    margin: 5% 20%;
+    height: 48px;
+    width: 48px;
+    background-image: url(../img/iconTrash.png);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.fileControl .iconTrash:hover{
+    background-image: url(../img/iconPenW.png);
+}
+.fileMore span{
+    display: inline-block;
+    margin-top: 60px;
+}
+.fileSeen, .fileDownload{
+    float: left;
+    padding-right: 20px;
+}
+.fileComment span{
+    padding-left: 5px;
+    font-size: 12px;
+    color: #00b7ee;
+    cursor: pointer;
+}
+.fileComment span:hover{
+    text-decoration: underline;
+}
+.fileComment{
+    float: right;
+}
+/*file ends*/
+/*footer starts*/
+footer{
+    background:url(../img/footerBg.png);
+}
+.copyRight{
+    display: inline-block;
+}
+.footerContainer {
+    padding-top: 70px;
+    text-align: center;
+}
+/*footer ends*/
+/*editor starts*/
+.editor textarea,input[text]{
+    border-radius: 5px;
+}
+.eHeader{
+    font-size: 24px;
+    color: #00b7ee;
+    margin: 0 40px 0 40px;
+    padding-top: 20px;
+}
+.eFormContainer .inputContainer{
+    float: left;
+    width: 50%;
+    margin: 10px 0;
+    line-height: 27px;
+}
+.eFormContainer{
+    margin: 0 55px 0 55px;
+}
+.eFormContainer form{
+    padding-bottom: 30px;
+}
+.eIFormContainer .inputContainerF textarea{
+    width: 90%;
+    height: 150px;
+    overflow: auto;
+}
+.eFormContainer h3{
+    font-size: 18px;
+}
+.eFormContainer button{
+    float: right;
+    font-size: 16px;
+    background-color: #00b7ee;
+    padding: 5px 20px;
+    border-radius: 15px;
+    color: #ffffff;
+    border: 0;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.eFormContainer button:hover{
+    background-color: #ffffff;
+    color: #00b7ee;
+}
+.eIFormContainer #personsEIntro{
+    width: 500px;
+    height: 200px;
+    overflow: hidden;
+}
+.pELabel,#personsSex{
+    display: inline-block;
+    width: 80px;
+}
+.eIFormContainer .pERadio{
+    padding: 0 30px;
+}
+.personsEIcon{
+    display: inline-block;
+}
+.personsEIcon img{
+    margin-left: 50px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+.editor{
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(100,100,100,0.5);
+    display: none;
+}
+.editorContainer{
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 50px auto 0 auto;
+    z-index: 500;
+    background-color: #ffffff;
+}
+body .eDisplayed{
+    display: block;
+}
+.eCFormContainer .inputContainerL{
+    margin: 10px 0;
+}
+.eCFormContainer #eCTitle{
+    width: 80%;
+}
+.eCFormContainer #eCBrief{
+    width: 80%;
+    height: 150px;
+}
+.eCFormContainer #eCBL{
+    vertical-align: top;
+}
+.eCFooter{
+    margin-left: 80px;
+    vertical-align: middle;
+}
+.eCFooter span{
+    font-size: 16px;
+    padding-left: 5px;
+}
+.eCFL{
+    float: left;
+}
+.eCFR{
+    float: right;
+}
+.eCFR span{
+    color: #bbbbbb;
+}
+/*editor ends*/

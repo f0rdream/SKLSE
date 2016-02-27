@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>软件工程国家重点实验室</title>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link href="css/normalize.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header class="header">
+        <div class="headerContainer">
+            <div class="headerIcon">
+                <img src="img/icon.jpg">
+            </div>
+            <div class="headerFont">
+                <h1>软件工程国家重点实验室</h1>
+                <h3>STATE KEY LAB OF SOFTWARE ENGINEERING</h3>
+            </div>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="loginContainer">
+            <div class="loginFont">
+                <p class="loginHello">你好，游客</p>
+                <p class="loginButtons">
+                    <span class="button" id="language"><a href="#">English</a></span>
+                    <span class="button" id="login" onclick="loginDisplay()"><a href="#">登录</a></span>
+                </p>
+            </div>
+            <div class="loginForm">
+                <form method="post" action="#">
+                    <label for="loginUser" class="labelInput" id="labelUser">用户名</label>
+                    <input type="text"  name="user" id="loginUser">
+                    <label for="loginPasswd" class="labelInput" id="labelPasswd">密码</label>
+                    <input type="password" id="loginPasswd">
+                    <input type="submit" value="登录">
+                </form>
+            </div>
+        </div>
+        <div class="navContainer clearFix">
+            <ul class="navOptions clearFix">
+                <li class="options"><a href="#" class="optionsA">实验室概况</a></li>
+                <li class="options"><a href="#" class="optionsA">研究队伍</a></li>
+                <li class="options"><a href="#" class="optionsA">科学研究</a></li>
+                <li class="options mainOptions">
+                    <a href="#" id="cooA" class="optionsA">合作交流</a>
+                    <ul class="subOptions">
+                        <li><a href="#">英国</a></li>
+                        <li><a href="#">美国</a></li>
+                    </ul>
+                </li>
+                <li class="options opHome"><a href="#"><img src="img/homeIcon.png" class="homeIcon"></a></li>
+                <li class="options"><a href="#" class="optionsA">人才培养</a></li>
+                <li class="options"><a href="#" class="optionsA">研究课题</a></li>
+                <li class="options"><a href="#" class="optionsA">工作动态</a></li>
+                <li class="options"><a href="#" class="optionsA">下载中心</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="newsContainer">
+        <div class="news clearFix">
+            <div class="pictures">
+                <ul class="picsSwitch clearFix">
+                    <li class="pSwitchPic active"><a ><img src="img/p-1.jpg"></a></li>
+                    <li class="pSwitchPic"><a ><img src="img/p-2.jpg"></a></li>
+                    <li class="pSwitchPic"><a ><img src="img/p-3.jpg"></a></li>
+                    <li class="pSwitchPic"><a ><img src="img/p-4.jpg"></a></li>
+                    <li class="pSwitchPic"><a ><img src="img/p-5.jpg"></a></li>
+                </ul>
+                <div class="picsPre" onclick="minusX()"></div>
+                <div class="picsNext" onclick="addX()"></div>
+                <ul class="picsList">
+                </ul>
+            </div>
+            <div class="newsContent">
+                <div class="newsCTitle">
+                    <h2>软件工程国家重点实验室杯网页设计大赛</h2>
+                    <p class="newsTDate">2015-2-15</p>
+                </div>
+                <div class="newsCContent">
+                    <ul class="CContent">
+                        <li><span class="triangleRight"></span><a href="#">2015需求研讨会在武汉大学召开</a><span class="newsDate">2015-11-1</span></li>
+                        <li><span class="triangleRight"></span><a href="#">2015需求研讨会在武汉大学召开</a><span class="newsDate">2015-11-11</span></li>
+                        <li><span class="triangleRight"></span><a href="#">2015需求研讨会在武汉大学召开</a><span class="newsDate"></span></li>
+                        <li><span class="triangleRight"></span><a href="#">2015需求研讨会在武汉大学召开</a><span class="newsDate"></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="eventsContainer">
+        <div class="events">
+            <div class="eventsHeader">
+                <h2>工作动态</h2>
+                <span class="contentMore moreButton"><a href="#">More</a></span>
+            </div>
+            <div class="eventsContent clearFix">
+                <div class="col1 cols">
+                    <div class="colPicture">
+                        <a href="#"><img src="img/eventsPic.jpg"></a>
+                        <span class="colPicNote">科学成果</span>
+                    </div>
+                    <div class="colContent">
+                        <span class="colMore clearFix"><a href="#">More</a></span>
+                        <ul class="colUl">
+                            <li><a href="#">2015需求研讨会在武汉大学召开</a><span class="newsDate"></span></li>
+                            <li><a href="#">2015需求研讨会在武汉大学召开</a><span class="newsDate"></span></li>
+                            <li><a href="#">2015需求研讨会在武汉大学召开</a><span class="newsDate"></span></li>
+                            <li><a href="#">2015需求研讨会在武汉大学召开</a><span class="newsDate"></span></li>
+                            <li><a href="#">2015需求研讨会在武汉大学召开</a><span class="newsDate"></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col2 cols">
+                    <div class="colPicture">
+                        <a href="#"><img src="img/eventsPic.jpg"></a>
+                        <span class="colPicNote">合作交流</span>
+                    </div>
+                    <div class="colContent">
+                        <span class="colMore clearFix"><a href="#">More</a></span>
+                        <ul class="colUl">
+                            <li><a href="#">2015需求研讨会在武汉大学召开</a><span class="newsDate"></span></li>
+                            <li><a href="#">2015需求研讨会在武汉大学召开</a><span class="newsDate"></span></li>
+                            <li><a href="#">2015需求研讨会在武汉大学召开</a><span class="newsDate"></span></li>
+                            <li><a href="#">2015需求研讨会在武汉大学召开</a><span class="newsDate"></span></li>
+                            <li><a href="#">2015需求研讨会在武汉大学召开</a><span class="newsDate"></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col3 cols">
+                    <div class="colPicture">
+                        <a href="#"><img src="img/eventsPic.jpg"></a>
+                        <span class="colPicNote">通知公告</span>
+                    </div>
+                    <div class="colContent">
+                        <span class="colMore clearFix"><a href="#">More</a></span>
+                        <ul class="colUl">
+                            <li><a href="#">2015需求研讨会在武汉大学召开</a><span class="newsDate"></span></li>
+                            <li><a href="#">2015需求研讨会在武汉大学召开</a><span class="newsDate"></span></li>
+                            <li><a href="#">2015需求研讨会在武汉大学召开</a><span class="newsDate"></span></li>
+                            <li><a href="#">2015需求研讨会在武汉大学召开</a><span class="newsDate"></span></li>
+                            <li><a href="#">2015需求研讨会在武汉大学召开</a><span class="newsDate"></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="personsContainer">
+        <div class="persons">
+            <div class="personsHeader">
+                <h2>优秀人才</h2>
+                <span class="contentMore moreButton"><a href="#">More</a></span>
+            </div>
+            <div class="personsContent clearFix">
+                <div class="personsIContainer pIC1">
+                    <div class="pIBefore"></div>
+                    <div class="personsIcon"><img src="img/personsIcon.jpg"></div>
+                    <div class="pIconNote"><span class="personName">张三</span><span class="personClass">教授</span></div>
+                </div>
+                <div class="personsIContainer pIC2">
+                    <div class="personsIcon"><img src="img/personsIcon.jpg"></div>
+                    <div class="pIconNote"><span class="personName">李四</span><span class="personClass">教授</span></div>
+                </div>
+                <div class="personsIContainer pIC3">
+                    <div class="personsIcon"><img src="img/personsIcon.jpg"></div>
+                    <div class="pIconNote"><span class="personName">王五</span><span class="personClass">教授</span></div>
+                </div>
+                <div class="personsIContainer pIC4">
+                    <div class="personsIcon"><img src="img/personsIcon.jpg"></div>
+                    <div class="pIconNote"><span class="personName">张三</span><span class="personClass">教授</span></div>
+                </div>
+                <div class="personsIContainer pIC5">
+                    <div class="personsIcon"><img src="img/personsIcon.jpg"></div>
+                    <div class="pIconNote"><span class="personName">张三</span><span class="personClass">教授</span></div>
+                    <div class="pIBehind"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="linksContainer">
+        <div class="links">
+            <div class="linksHeader">
+                <h2>友情链接</h2>
+                <span class="contentMore moreButton"><a href="#">More</a></span>
+            </div>
+            <div class="linksContent clearFix">
+                <div class="lContent">
+                    <span class="triangleRight"></span><a href="#">武汉大学官网</a>
+                </div>
+                <div class="lContent">
+                    <span class="triangleRight"></span><a href="#">计算机学院官网</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footerContainer">
+            <span class="copyRight">Copyright 2016 State Key Lab of Software Eengineering, All Rights Reserved</span>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
