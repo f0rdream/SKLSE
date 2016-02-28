@@ -297,6 +297,7 @@ footer{
     font-size: 18px;
 }
 .eFormContainer button{
+    cursor: pointer;
     float: right;
     font-size: 16px;
     background-color: #00b7ee;
@@ -351,6 +352,9 @@ footer{
     margin: 50px auto 0 auto;
     z-index: 500;
     background-color: #ffffff;
+}
+.editorContent .editorContainer{
+    margin: 300px auto 0 auto;
 }
 body .eDisplayed{
     display: block;

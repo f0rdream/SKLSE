@@ -11,6 +11,98 @@
     <link href="css/personPage.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    <div class="editor editorIntro">
+        <div class="editorContainer">
+            <div class="eIHeader eHeader">
+                <h3>编辑</h3>
+            </div>
+            <div class="eIFormContainer eFormContainer">
+                <form method="get" class="eIForm clearFix">
+                    <div class="inputContainerL">
+                        <h3 class="pEIntroH">简介</h3>
+                        <label for="personsEIntro"></label>
+                        <textarea name="personsEWords" id="personsEIntro"></textarea>
+                        <span class="personsEIcon"><img src="img/personsIcon.jpg"></span>
+                    </div>
+                    <h3 class="pEEssential">基本信息</h3>
+                    <div class="inputContainerS clearFix">
+                        <div class="inputContainer">
+                            <label for="personsEName" class="pELabel">姓名</label>
+                            <input type="text" name="personsEName" id="personsEName">
+                        </div>
+                        <div class="inputContainer">
+                            <span id="personsSex">性别</span>
+                            <label class="pERadio"><input type="radio" name="personsSex" >男</label>
+                            <label class="pERadio"><input type="radio" name="personsSex">女</label>
+                        </div>
+                        <div class="inputContainer">
+                            <label for="personsECountry" class="pELabel">国籍</label>
+                            <input type="text" id="personsECountry">
+                        </div>
+                        <div class="inputContainer">
+                            <label for="personsENation" class="pELabel">民族</label>
+                            <input type="text" id="personsENation">
+                        </div>
+                        <div class="inputContainer">
+                            <label for="personsEBirthPlace" class="pELabel">出生地</label>
+                            <input type="text" id="personsEBirthPlace">
+                        </div>
+                        <div class="inputContainer">
+                            <label for="personsEBirthDay" class="pELabel">出生日期</label>
+                            <input type="text" id="personsEBirthDay">
+                        </div>
+                        <div class="inputContainer">
+                            <label for="personsEGraduateSchool" class="pELabel">毕业院校</label>
+                            <input type="text" id="personsEGraduateSchool">
+                        </div>
+                        <div class="inputContainer">
+                            <label for="personsEPolitics" class="pELabel">政治面貌</label>
+                            <input type="text" id="personsEPolitics">
+                        </div>
+                    </div>
+                    <div class="inputContainerF">
+                        <h3 class="pEWorks">在研项目</h3>
+                        <label><textarea></textarea></label>
+                    </div>
+                    <div class="inputContainerF">
+                        <h3 class="pEAchievement">主要成就</h3>
+                        <label><textarea></textarea></label>
+                    </div>
+                    <button type="submit">完成</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="editor editorContent">
+        <div class="editorContainer">
+            <div class="eCHeader eHeader">
+                <h3>编辑</h3>
+            </div>
+            <div class="eCFormContainer eFormContainer">
+                <form method="get" action="#" class="eCForm clearFix">
+                    <div class="inputContainerL">
+                        <label for="eCTitle" class="pELabel">标题</label>
+                        <input type="text" id="eCTitle">
+                    </div>
+                    <div class="inputContainerL">
+                        <label for="eCBrief" class="pELabel" id="eCBL">简述</label>
+                        <textarea id="eCBrief"></textarea>
+                    </div>
+                    <div class="eCFooter clearFix">
+                        <div class="eCFL">
+                            <img src="img/iconImg.png"><span>添加图片</span>
+                            <img src="img/iconLink.png"><span>添加附件</span>
+                        </div>
+                        <div class="eCFR">
+                            <span>现在时间:</span>
+                            <span class="timeNow"></span>
+                        </div>
+                    </div>
+                    <button type="submit">完成</button>
+                </form>
+            </div>
+        </div>
+    </div>
     <header class="headerContainer">
         <div class="header">
             <div class="headerTop">
@@ -109,7 +201,7 @@
         <div class="file">
             <div class="fileHeader">
                 <h2 class="contentTitle">资料论文</h2>
-                <span class="button buttonRight"><a href="#">上传</a></span>
+                <span class="button buttonRight" onclick="editorCOn()"><a>上传</a></span>
             </div>
             <div class="fileContent clearFix">
                 <div class="fTimeContainer">
