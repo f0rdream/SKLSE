@@ -32,8 +32,8 @@
                         </div>
                         <div class="inputContainer">
                             <span id="personsSex">性别</span>
-                            <label class="pERadio"><input type="radio" name="personsSex" >男</label>
-                            <label class="pERadio"><input type="radio" name="personsSex">女</label>
+                            <label class="pERadio"><input type="radio" name="personsSex" id="sexMale">男</label>
+                            <label class="pERadio"><input type="radio" name="personsSex" id="sexFemale">女</label>
                         </div>
                         <div class="inputContainer">
                             <label for="personsECountry" class="pELabel">国籍</label>
@@ -68,7 +68,7 @@
                         <h3 class="pEAchievement">主要成就</h3>
                         <label><textarea></textarea></label>
                     </div>
-                    <button type="submit">完成</button>
+                    <button type="submit" id="editorSubmit">完成</button>
                 </form>
             </div>
         </div>
@@ -287,7 +287,27 @@
     </footer>
     <script src="js/sub.js"></script>
     <script>
-
+        document.getElementById("editorSubmit").onclick = function{
+            var formSex;
+            if(document.getElementById("sexMale")){
+                formSex = "男"
+            }else if(document.getElementById("sexFemale")){
+                formSex = "女"
+            }
+            var submit = new XMLHttpRequest();
+            submit.open("POST","/professor_api/");
+            var data = "moto=" + document.getElementById("personsEIntro").value +
+                        "&name=" + document.getElementById("personsEName").value +
+                            "&sex=" + formSex +
+                            "&country" + document.getElementById("personsECountry").value +
+                            "&nationality" + document.getElementById("personsENation").value +
+                            "&born_place" + document.getElementById("personsEBirthPlace").value +
+                            "&birthday" + document.getElementById("personsEBirthDay").value +
+                            "&school" + document.getElementById("personsEGraduateSchool").value +
+                            "&belief" + document.getElementById("personsEPolitics").value;
+            submit.setRequestHeader("Content-Type","application/json");
+            submit.send(data);
+        }
     </script>
 </body>
 </html>
