@@ -43,7 +43,7 @@ input[type="submit"]:hover, input[type="reset"]:hover {
 .moreButton{
     font-size: 16px;
     background-color: #00b7ee;
-    display: block;
+    display: inline-block;
     border-radius: 5px;
 }
 .moreButton a{
@@ -60,6 +60,7 @@ input[type="submit"]:hover, input[type="reset"]:hover {
     color: #00b7ee;
     background-color: #ffffff;
 }
+
 /*Global settings end*/
 
 /*header starts*/
@@ -634,6 +635,7 @@ body{
     position: relative;
 }
 .editor{
+    display: none;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -745,6 +747,9 @@ body{
 .cSTOptions{
     padding-bottom: 10px;
 }
+.eFormContainer{
+    padding-bottom: 50px;
+}
 .eFormOuterUl{
     margin: 0 55px;
 }
@@ -764,8 +769,29 @@ body{
 .iconTri{
     float: right;
 }
-
-
+.eButton{
+    float: right;
+    font-size: 16px;
+    background-color: #00b7ee;
+    display: inline-block;
+    border-radius: 5px;
+    margin-right: 55px;
+}
+.eButton a{
+    display: block;
+    padding: 5px 10px;
+    color: #ffffff;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.eButton a:hover{
+    color: #00b7ee;
+    background-color: #ffffff;
+}
+/*editor ends*/
 
 
 
