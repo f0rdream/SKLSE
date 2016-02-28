@@ -241,7 +241,7 @@ input[type="submit"]:hover, input[type="reset"]:hover {
     color: #fff;
     background-color: #00b7ee;
 }
-.mainOptions:hover .subOptions{
+.options:hover .subOptions{
     display: block;
 }
 /*navigator ends*/

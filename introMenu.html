@@ -85,12 +85,12 @@
                 </p>
             </div>
             <div class="loginForm">
-                <form method="post" action="#">
+                <form method="post">
                     <label for="loginUser" class="labelInput" id="labelUser">用户名</label>
                     <input type="text"  name="user" id="loginUser">
                     <label for="loginPasswd" class="labelInput" id="labelPasswd">密码</label>
                     <input type="password" id="loginPasswd">
-                    <input type="submit" value="登录">
+                    <input type="submit" value="登录" id="loginButton">
                 </form>
             </div>
         </div>
@@ -235,5 +235,14 @@
             <span class="copyRight">Copyright 2016 State Key Lab of Software Eengineering, All Rights Reserved</span>
         </div>
     </footer>
+    <script>
+        document.getElementById("loginButton").onclick = function(){
+            var login = new XMLHttpRequest();
+            login.open("POST", "/login_api/")
+            var data = "name=" + document.getElementById("labelUser").value + "password=" + document.getElementById("labelPasswd").value;
+            login.setRequestHeader("Content-Type", "application/json")
+            login.send(data);
+        }
+    </script>
 </body>
 </html>
