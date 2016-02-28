@@ -1,4 +1,7 @@
 /*global starts*/
+.owner{
+    display: none;
+}
 .button a{
     font-size: 16px;
     background-color: #00b7ee;

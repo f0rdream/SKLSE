@@ -499,15 +499,8 @@ input[type="submit"]:hover, input[type="reset"]:hover {
     text-align: center;
     font-size: 14px;
 }
-.pIC2{
-    margin-left: 100px;
-}
-.pIC4{
-    margin-right: 100px;
-}
-
-.pIC3{
-    margin: 0 150px;
+.pIC{
+    margin: 0 50px;
 }
 .personsContainer{
     border-bottom: 5px solid #cccccc;
