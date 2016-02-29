@@ -324,6 +324,7 @@ input[type="submit"]:hover, input[type="reset"]:hover {
     text-align: center;
 }
 .picsList li{
+    display: inline-block;
     width: 10px;
     height: 10px;
     border: 1px #ffffff solid;
@@ -331,7 +332,7 @@ input[type="submit"]:hover, input[type="reset"]:hover {
     cursor: pointer;
     float: left;
     margin: 5px;
-    left: 35%;
+    left: 38%;
     position: relative;
     list-style: none;
     -webkit-transition: all .5s ease-in-out;

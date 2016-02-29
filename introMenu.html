@@ -235,12 +235,13 @@
             <span class="copyRight">Copyright 2016 State Key Lab of Software Eengineering, All Rights Reserved</span>
         </div>
     </footer>
+    <script src="js/main.js"></script>
     <script>
         document.getElementById("loginButton").onclick = function(){
             var login = new XMLHttpRequest();
-            login.open("POST", "/login_api/")
+            login.open("POST", "/login_api/");
             var data = "name=" + document.getElementById("labelUser").value + "password=" + document.getElementById("labelPasswd").value;
-            login.setRequestHeader("Content-Type", "application/json")
+            login.setRequestHeader("Content-Type", "application/json");
             login.send(data);
         }
     </script>
