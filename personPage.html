@@ -68,7 +68,7 @@
                         <h3 class="pEAchievement">主要成就</h3>
                         <label><textarea></textarea></label>
                     </div>
-                    <button type="submit" id="editorSubmit">完成</button>
+                    <button type="submit" id="editorISubmit">完成</button>
                 </form>
             </div>
         </div>
@@ -79,7 +79,7 @@
                 <h3>编辑</h3>
             </div>
             <div class="eCFormContainer eFormContainer">
-                <form method="get" action="#" class="eCForm clearFix">
+                <form method="get" action="#" class="eCForm clearFix" enctype="multipart/form-data">
                     <div class="inputContainerL">
                         <label for="eCTitle" class="pELabel">标题</label>
                         <input type="text" id="eCTitle">
@@ -90,15 +90,14 @@
                     </div>
                     <div class="eCFooter clearFix">
                         <div class="eCFL">
-                            <img src="img/iconImg.png"><span>添加图片</span>
-                            <img src="img/iconLink.png"><span>添加附件</span>
+                            <label>添加附件<input type="file" id="fileUpload"></label>
                         </div>
                         <div class="eCFR">
                             <span>现在时间:</span>
                             <span class="timeNow"></span>
                         </div>
                     </div>
-                    <button type="submit">完成</button>
+                    <button type="submit" id="editorCSubmit">完成</button>
                 </form>
             </div>
         </div>
@@ -112,7 +111,7 @@
                     </div>
                     <div class="hBtnContainerR">
                         <span class="button hBtnR1 active"><a href="#">首页</a></span>
-                        <span class="button hBtnR2"><a href="#">登出</a></span>
+                        <span class="button hBtnR2 owner"><a href="#">登出</a></span>
                     </div>
                 </div>
             </div>
@@ -201,30 +200,7 @@
         <div class="file">
             <div class="fileHeader">
                 <h2 class="contentTitle">资料论文</h2>
-                <span class="button buttonRight" onclick="editorCOn()"><a>上传</a></span>
-            </div>
-            <div class="fileContent clearFix">
-                <div class="fTimeContainer">
-                    <span class="fTime">2016.2.17</span>
-                </div>
-                <div class="fileExactContainer">
-                    <h2 class="fETitle">是京东客服哈交电话费</h2>
-                    <div class="fileExact">
-                        <span class="fEIcon"><img src="img/iconLink.png"></span>
-                        <span class="fEName">面积等次啊神盾局爱.pdf</span>
-                    </div>
-                    <div class="fEIntro">
-                        <div><p>爱上吃那点及卡号的空间啊实打实的离开谁都爱问问哦吃饭时离开电风扇摩擦力卡萨就发哦二怕忘记了放假快乐多侧面看减肥了卡萨及法律是否我饿爱上吃那点及卡号的空间啊实打实的离开谁都爱问问哦吃饭时离开电风扇摩擦力卡萨就发哦二怕忘记了放假快乐多侧面看减肥了卡萨及法律是否我饿爱上吃那点及卡号的空间啊实打实的离开谁都爱问问哦吃饭时离开电风扇摩擦力卡萨就发哦二怕忘记了放假快乐多侧面看减肥了卡萨及法律是否我饿……</p></div>
-                        <div class="fileComment"></div>
-                    </div>
-                </div>
-                <div class="fileControlContainer">
-                    <div class="fileControl">
-                        <div class="iconPen"></div>
-                        <div class="division"></div>
-                        <div class="iconTrash"></div>
-                    </div>
-                </div>
+                <span class="button buttonRight owner" onclick="editorCOn()"><a>上传</a></span>
             </div>
             <div class="fileContent clearFix">
                 <div class="fTimeContainer">
@@ -239,8 +215,8 @@
                     <div class="fEIntro">
                         <div><p>爱上吃那点及卡号的空间啊实打实的离开谁都爱问问哦吃饭时离开电风扇摩擦力卡萨就发哦二怕忘记了放假快乐多侧面看减肥了卡萨及法律是否我饿爱上吃那点及卡号的空间啊实打实的离开谁都爱问问哦吃饭时离开电风扇摩擦力卡萨就发哦二怕忘记了放假快乐多侧面看减肥了卡萨及法律是否我饿爱上吃那点及卡号的空间啊实打实的离开谁都爱问问哦吃饭时离开电风扇摩擦力卡萨就发哦二怕忘记了放假快乐多侧面看减肥了卡萨及法律是否我饿……</p></div>
                         <div class="fileComment clearFix">
-                            <div class="fileSeen"><img src="img/iconEye.png"><span id="fSAmount">999</span></div>
-                            <div class="fileDownload"><img src="img/iconDownload.png"><span id="fDAmount">999</span></div>
+                            <div class="fileSeen"><img src="img/iconEye.png"><span class="fSAmount">999</span></div>
+                            <div class="fileDownload"><img src="img/iconDownload.png"><span class="fDAmount">999</span></div>
                         </div>
                     </div>
                 </div>
@@ -264,7 +240,36 @@
                     </div>
                     <div class="fEIntro">
                         <div><p>爱上吃那点及卡号的空间啊实打实的离开谁都爱问问哦吃饭时离开电风扇摩擦力卡萨就发哦二怕忘记了放假快乐多侧面看减肥了卡萨及法律是否我饿爱上吃那点及卡号的空间啊实打实的离开谁都爱问问哦吃饭时离开电风扇摩擦力卡萨就发哦二怕忘记了放假快乐多侧面看减肥了卡萨及法律是否我饿爱上吃那点及卡号的空间啊实打实的离开谁都爱问问哦吃饭时离开电风扇摩擦力卡萨就发哦二怕忘记了放假快乐多侧面看减肥了卡萨及法律是否我饿……</p></div>
-                        <div class="fileComment"></div>
+                        <div class="fileComment clearFix">
+                            <div class="fileSeen"><img src="img/iconEye.png"><span class="fSAmount">999</span></div>
+                            <div class="fileDownload"><img src="img/iconDownload.png"><span class="fDAmount">999</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fileControlContainer">
+                    <div class="fileControl">
+                        <div class="iconPen"></div>
+                        <div class="division"></div>
+                        <div class="iconTrash"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="fileContent clearFix">
+                <div class="fTimeContainer">
+                    <span class="fTime">2016.2.17</span>
+                </div>
+                <div class="fileExactContainer">
+                    <h2 class="fETitle">是京东客服哈交电话费</h2>
+                    <div class="fileExact">
+                        <span class="fEIcon"><img src="img/iconLink.png"></span>
+                        <span class="fEName">面积等次啊神盾局爱.pdf</span>
+                    </div>
+                    <div class="fEIntro">
+                        <div><p>爱上吃那点及卡号的空间啊实打实的离开谁都爱问问哦吃饭时离开电风扇摩擦力卡萨就发哦二怕忘记了放假快乐多侧面看减肥了卡萨及法律是否我饿爱上吃那点及卡号的空间啊实打实的离开谁都爱问问哦吃饭时离开电风扇摩擦力卡萨就发哦二怕忘记了放假快乐多侧面看减肥了卡萨及法律是否我饿爱上吃那点及卡号的空间啊实打实的离开谁都爱问问哦吃饭时离开电风扇摩擦力卡萨就发哦二怕忘记了放假快乐多侧面看减肥了卡萨及法律是否我饿……</p></div>
+                        <div class="fileComment clearFix">
+                            <div class="fileSeen"><img src="img/iconEye.png"><span class="fSAmount">999</span></div>
+                            <div class="fileDownload"><img src="img/iconDownload.png"><span class="fDAmount">999</span></div>
+                        </div>
                     </div>
                 </div>
                 <div class="fileControlContainer owner">
@@ -287,7 +292,7 @@
     </footer>
     <script src="js/sub.js"></script>
     <script>
-        document.getElementById("editorSubmit").onclick = function{
+        document.getElementById("editorISubmit").onclick = function(){
             var formSex;
             if(document.getElementById("sexMale")){
                 formSex = "男"
@@ -307,6 +312,38 @@
                             "&belief" + document.getElementById("personsEPolitics").value;
             submit.setRequestHeader("Content-Type","application/json");
             submit.send(data);
+        };
+        document.getElementById("editorCSubmit").onclick = function(){
+            var submit = new XMLHttpRequest();
+            submit.open("POST","/article_api/");
+            var data = "title=" + document.getElementById("eCTitle").value +
+                    "&detail=" + document.getElementById("personsEName").value +
+                    "&file_name=" + document.getElementById("");
+            submit.setRequestHeader("Content-Type","application/json");
+            submit.send(data);
+        };
+        /*加载更多功能*/
+        /*window.onload = function{
+            var add = new XMLHttpRequest();
+            add.open("GET","/article_api/?id=" + document)
+        }*/
+        window.onload = function() {
+            var i = 0;
+            var fSAmount;
+            var fDAmount;
+            while (document.getElementsByClassName("fileContent")[i]) {
+                fSAmount = document.getElementsByClassName("fSAmount")[i];
+                fDAmount = document.getElementsByClassName("fDAmount")[i];
+                var add = new XMLHttpRequest();
+                add.open("GET", "/article_api/?id=" + i + "&read_count=" + parseInt(fSAmount.innerText) + 1);
+                add.send();
+                fDAmount.onclick = function (j) {
+                    var addD = new XMLHttpRequest();
+                    addD.open("GET", "/article_api/?id=" + j + "&download_count=" + parseInt(fDAmount.innerText) + 1);
+                    addD.send();
+                }(i);
+                i++;
+            }
         }
     </script>
 </body>
